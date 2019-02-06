@@ -9,10 +9,40 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
   <title>Notes</title>
 </head>
-
 <body>
 
-  <h1>Hello World</h1>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card mt-4">
+          <div class="card-body">
+            <h1 class="card-title">Notes</h1>
+            <form>
+              <div class="form-group mt-4">
+                <label for="author"><Title></Title>Title</label>
+                <input type="text" class="form-control" id="quote-author" placeholder="Title">
+              </div>
+              <div class="form-group">
+                <label for="quote">Note</label>
+                <textarea placeholder="Text" class="form-control" id="quote-text" rows="3"></textarea>
+              </div>
+              <button id="submit-btn" class="btn btn-primary float-right">Add Note</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card mt-4">
+          <div class="card-body">
+            <h1 class="card-title">Notes</h1>
+            <ul id="quotes-list" class="list-group">
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
